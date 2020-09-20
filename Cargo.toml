@@ -1,0 +1,15 @@
+[package]
+name = "server"
+version = "0.1.0"
+authors = ["Nikita Baksalyar <nikita.baksalyar@gmail.com>", "Jake Goulding <jake.goulding@integer32.com>"]
+edition = "2018"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+rocket = { git = "https://github.com/SergioBenitez/Rocket.git" }
+rocket_contrib = { git = "https://github.com/SergioBenitez/Rocket.git" }
+serde = { version = "1.0.114", features = ["derive"] }
+tempdir = "0.3.7"
+snafu = "0.6.8"
+log = "0.4.11"
+tokio = { version = "0.2.9", features = ["macros", "time", "process", "rt-threaded"] }
